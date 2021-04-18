@@ -38,7 +38,6 @@ function processDogBreeds(json) {
     breeds[breed].forEach(childBreed => breedList.push(`${breed} ${childBreed}`));
   });
   
-  
   addBreedsToList(breedList);
 }
 
