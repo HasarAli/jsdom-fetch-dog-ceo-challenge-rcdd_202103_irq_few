@@ -26,6 +26,7 @@ function getDogBreeds() {
 
 
 const breedList = [];
+
 function processDogBreeds(json) {
   const breeds = json.message;
   
