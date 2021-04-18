@@ -67,6 +67,5 @@ function parseImages(json) {
     img.src = link;
     img.alt = '';
     images.append(img);
-  })
-  return json;
+  });
 }
