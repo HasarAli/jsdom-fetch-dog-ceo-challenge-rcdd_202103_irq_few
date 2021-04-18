@@ -13,9 +13,8 @@ function filterByDropDown() {
 }
 
 function changeListColorOnClick() {
-  const breedList = document.querySelector('#dog-breeds');
-  
-  breedList.addEventListener('click', e => e.target.style.color = 'red');
+  const list = document.querySelector('#dog-breeds');
+  list.addEventListener('click', e => e.target.style.color = 'red');
 }
 
 function getDogBreeds() {
