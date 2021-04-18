@@ -21,7 +21,8 @@ function getDogBreeds() {
   const breedUrl = 'https://dog.ceo/api/breeds/list/all'
   fetch(breedUrl)
     .then(response => response.json())
-    .then(processDogBreeds);
+    .then(processDogBreeds)
+    .then(addBreedsToList);
 }
 
 
@@ -38,8 +39,7 @@ function processDogBreeds(json) {
     breeds[breed].forEach(childBreed => breedList.push(`${breed} ${childBreed}`));
   });
   
-  addBreedsToList(breedList);
-  return json;
+  return breedList;
 }
 
 function addBreedsToList(breeds) {
