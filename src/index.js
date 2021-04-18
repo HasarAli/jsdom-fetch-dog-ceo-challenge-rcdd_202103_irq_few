@@ -39,6 +39,7 @@ function processDogBreeds(json) {
   });
   
   addBreedsToList(breedList);
+  return json;
 }
 
 function addBreedsToList(breeds) {
